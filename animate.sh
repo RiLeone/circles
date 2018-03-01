@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-ffmpeg -i plts/frames/%05d.png -vcodec libx264 animation.mp4
+ffmpeg -r 10 -i plts/frames/%05d.png -vcodec libx264 animation.mp4
+rm -f plts/frames/*.png
